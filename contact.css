@@ -1,0 +1,64 @@
+.contact-form {
+    margin-top: 20px;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff523b;
+    margin-top: 10%;
+    font-family: 'Roboto', sans-serif;
+
+}
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    margin: 10px 0;
+}
+.contact-form label{
+    font-size: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact-form h2{
+    color: #ff523b;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-form button {
+    background-color: #ff523b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: black;
+}
+
+/* Animation Styles */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to specific elements */
+h2,
+.contact-details,
+.contact-form {
+    animation: fadeIn 1s ease-in-out;
+}

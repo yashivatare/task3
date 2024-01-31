@@ -1,0 +1,33 @@
+/* Add styles to the slider container */
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Style the individual slides */
+.slides {
+    white-space: nowrap;
+    transition: 1s;
+}
+
+.slides img {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Add styles for the slider navigation buttons (if needed) */
+/* Example: You can add previous and next buttons */
+.slider-nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slider-nav button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ecommerce web</title>
+    <link rel="stylesheet" href="style.css" >
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,500;0,700;1,600&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="images/logo1.png" width="125px" />
+          </div>
+          <nav>
+            <ul class="MenuItems">
+              <li><a href="index.html" class="link">Home</a></li>
+              <li><a href="product.html" class="link">Products</a></li>
+              <li><a href="about.html" class="link">About</a></li>
+              <li><a href="contact.html" class="link">Contact</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+          <a href="account.html"><img src="images/logout.png" width="30px" height="30px" style="margin-left: 20px; margin-top: 5px;"></i></a>
+          <img  src="images/menu.png" class="menu-icon" 
+          onclick="menutoggle()" alt="" >
+        </div>
+
+        <div class="header">
+            <!-- Your header content, which may include the logo, navigation, etc. -->
+        </div>
+    
+        <div class="container">
+            
+            <h2>About MB Cloth Shop</h2>
+            <div class="para" style="margin-top: 20px;">
+            <p>
+                Welcome to MB Cloth Shop, your ultimate destination for fashionable clothing and accessories.
+                Founded in 20XX, we are committed to providing you with the latest trends and high-quality products
+                to elevate your style and make you look your best.
+    
+                Our Mission:
+                At MB Cloth Shop, we believe that fashion is a form of self-expression. Our mission is to empower individuals
+                to embrace their uniqueness through stylish apparel. We curate a wide range of clothing for men, women,
+                and children, ensuring there's something for everyone.
+            </div>
+            <div class="para2" style="margin-top: 30px;">
+               <p> What Sets Us Apart:
+                - Trendsetting Collections: Our team of fashion enthusiasts stays ahead of the curve, bringing you the
+                  freshest designs and styles.
+                - Quality Assurance: We handpick and quality-check each item to ensure you receive clothing that meets
+                  your standards.
+                - Customer Satisfaction: Your satisfaction is our priority. We offer hassle-free returns and excellent
+                  customer support.
+    
+                Shop with Confidence:
+                We understand that shopping online can be a daunting experience. Rest assured, we take your privacy and
+                security seriously. Our website is secure, and your data is protected.
+    
+                Thank you for choosing MB Cloth Shop. We appreciate your trust in us and look forward to being part of
+                your fashion journey.
+    
+                Contact Us:
+                If you have any questions, suggestions, or need assistance, please don't hesitate to contact our
+                customer support team. We are here to make your shopping experience exceptional.
+                </p>
+            </div>
+            </p>
+        </div>
+    
+
+<!--Js for toggle menu-->
+    <script>
+        var MenuItems = document.getElementById(MenuItems);
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+        var MenuItems = document.querySelector('.MenuItems'); // Select the menu items
+
+        if (MenuItems.style.maxHeight === '' || MenuItems.style.maxHeight === '0px') {
+            MenuItems.style.maxHeight = '200px';
+        } else {
+            MenuItems.style.maxHeight = '0px';
+        }
+    }
+
+    </script>
+  </body>
+</html>
